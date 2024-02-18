@@ -15,13 +15,13 @@ function App() {
     <>
       <Navbar />
       <Routes>
-         <Route exact path="/ecommerce/" element={<Home />} />
-         <Route exact path='/ecommerce/about' element={<About />} />
-         <Route exact path='/ecommerce/product' element={<Product />} />
-         <Route exact path='/ecommerce/contact' element={<Contact />} />
-         <Route exact path='*' element={<Error />} />
-         <Route exact path={`/ecommerce/productdetails/:id`} element = {<ProductDetails />} />
-         <Route exact path={`/ecommerce/cart`} element = {
+         <Route exact path="/e-commerce/" element={<Home />} />
+         <Route exact path='/e-commerce/about' element={<About />} />
+         <Route exact path='/e-commerce/product' element={<Product />} />
+         <Route exact path='/e-commerce/contact' element={<Contact />} />
+         <Route exact path='/e-commerce/*' element={<Error />} />
+         <Route exact path={`/e-commerce/productdetails/:id`} element = {<ProductDetails />} />
+         <Route exact path={`/e-commerce/cart`} element = {
            <Cart />} />
       </Routes>
       <Footer />

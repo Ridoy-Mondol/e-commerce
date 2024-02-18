@@ -129,9 +129,10 @@ ul li{
   color: #F76D37;
 }
 .product-outside {
-  width: 67%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  column-gap: 0!important;
 }
 .fig-caption{
   left: 0.4rem;
@@ -157,7 +158,7 @@ ul li{
   width: 17.3rem;
 }
 .feature-text{
-  margin-left: 17.6%;
+  margin-left: 11%;
   margin-bottom: 3.5rem;
 }
 .feature{
@@ -166,8 +167,9 @@ ul li{
   background-color: #F8F9FB;
 }
 .feature-btn {
-  margin-left: 18.15%;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .feature-btn:hover {
   background-color: #212529;
@@ -175,12 +177,17 @@ ul li{
 }
 .products-link {
   text-decoration: none;
+  width: 100%;
+}
+.home-product-image {
+  width: 100%;
 }
 .hover-card {
   transform: scale(1);
   transition: all 0.3s ease-in-out;
   background-color: #212529;
   border: 7px solid #212529;
+  width: 27%;
 }
 
 /* services */
@@ -689,13 +696,18 @@ nav {
 /* hero-section */
 .hero-div {
   margin-top: 4.5rem;
+  height: 50vh;
+  overflow-y: hidden;
+}
+.hero-img {
+  height: 100%;
 }
 .hero-text{
   font-size: 1.05rem;
 }
 .hero-1{
   left: 5%;
-  top: 45%;
+  top: 20%;
   width: 50%;
 }
 .wlc {
@@ -713,23 +725,24 @@ nav {
 /* homeProducts */
 .feature-heading {
   font-size: 2.7rem;
-  margin-left: 7.5%;
+  margin-left: 3%;
   transform: scaleY(1.1);
 }
 .check-now {
   font-size: 1.5rem;
-  margin-left: 7.5%;
+  margin-left: 3%;
   transform: scaleY(1.1);
 }
 .product-outside {
   width: 100%;
 }
+.hover-card {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .feature-text{
   margin-left: 0%;
-}
-.feature-btn {
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 /* services */
@@ -761,6 +774,9 @@ nav {
 }
 
 /* trusted */
+.trusted-div {
+  height: auto;
+}
 .trust-heading {
   font-size: 1.5rem;
 }
@@ -872,6 +888,9 @@ nav {
 }
 
 /* productDetails */
+.productdetails-div {
+  overflow-x: hidden;
+}
 .productDetails-img {
   width: 90%;
   height: 15rem;
@@ -916,7 +935,7 @@ nav {
 
 /* responsive for tab */
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 992px) {
    /* navbar */
 nav {
   position: fixed;
@@ -986,12 +1005,12 @@ nav {
 /* homeProducts */
 .feature-heading {
   font-size: 2.7rem;
-  margin-left: 5%;
+  margin-left: 3%;
   transform: scaleY(1.1);
 }
 .check-now {
   font-size: 1.5rem;
-  margin-left: 5%;
+  margin-left: 3%;
   transform: scaleY(1.1);
 }
 .product-outside {
@@ -1001,11 +1020,14 @@ nav {
   margin-left: 0%;
 }
 .feature-btn {
-  margin-left: 5%;
+  margin-left: 3%;
   transform: translateX(0);
 }
+.hover-card {
+  width: 27%;
+}
 .products-link {
-  width: 32%;
+  width: 100%;
 }
 
 /* services */
@@ -1131,5 +1153,29 @@ nav {
   margin-left: auto;
   margin-right: 10%;
 }
+}
 
+/* very small screen */
+@media (max-width: 333px) {
+  /* hero-section */
+  .wlc {
+    margin-top: 3.5rem;
+  }
+  .home-brand {
+    font-size: 2.3rem;
+  }
+  /* home-products */
+  .feature-heading {
+    font-size: 2.3rem;
+  }
+  /* product-details */
+  .product-details-inline {
+     width: 95%;
+  }
+  .details-icon-width {
+    width: 95%;
+    flex-direction: row!important;
+    align-items: center!important;
+    gap: 1rem;
+  }
 }

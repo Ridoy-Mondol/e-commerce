@@ -250,7 +250,7 @@ const orderTotal = formattedSubtotal + shipping;
       
       <div className='cart-head-div justify-content-between'>
       
-       <Link to='/ecommerce/product'>
+       <Link to='/e-commerce/product'>
         <button type='button' className='cart-btn'>CONTINUE</button>
         </Link>
 

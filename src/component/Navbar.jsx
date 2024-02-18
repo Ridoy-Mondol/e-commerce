@@ -44,23 +44,23 @@ const countArray = [count1,count2,count3,count4,count5,count6,count7,count8,coun
       </div>
     
 
-    <NavLink className="navbar-brand" to="/ecommerce/"><span className="border border-1 border-white p-1 ms-3"><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">SHOP</span></span></NavLink>
+    <NavLink className="navbar-brand" to="/e-commerce/"><span className="border border-1 border-white p-1 ms-3"><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">SHOP</span></span></NavLink>
     <div className={`link-div ${showNav ? "" : "hideMobile"}`}>
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
         <li className="nav-item">
-          <NavLink exact activeClassName="active" className="nav-link" aria-current="page" to="/ecommerce/">Home</NavLink>
+          <NavLink exact activeClassName="active" className="nav-link" aria-current="page" to="/e-commerce/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink exact activeClassName="active" className="nav-link" to="/ecommerce/about">About</NavLink>
+          <NavLink exact activeClassName="active" className="nav-link" to="/e-commerce/about">About</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink exact activeClassName="active" className="nav-link" to="/ecommerce/product">Products</NavLink>
+          <NavLink exact activeClassName="active" className="nav-link" to="/e-commerce/product">Products</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink exact activeClassName="active" className="nav-link" to="/ecommerce/contact">Contact</NavLink>
+          <NavLink exact activeClassName="active" className="nav-link" to="/e-commerce/contact">Contact</NavLink>
         </li>
 
-        <Link to={`/ecommerce/cart`}
+        <Link to={`/e-commerce/cart`}
         className="text-decoration-none">
         <li>
         <div className="d-flex align-items-center cart-power-parent">

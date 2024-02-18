@@ -90,7 +90,7 @@ const ProductDetails = () => {
         <h6 className='mt-3 offer-price'>Deal of the day : ${parseFloat(data.price * 0.95).toFixed(2)}</h6>
         <p className='mt-3 product-desc'>{data.description}</p>
 
-        <div className='d-flex justify-content-between flex-wrap'>
+        <div className='d-flex justify-content-between flex-wrap product-details-inline gap-3'>
         <div className='d-flex flex-column align-items-center details-icon-width'>
         <div className="icon icon-div">
           <i class="fa-solid fa-truck product-icon"></i>
@@ -223,7 +223,7 @@ const ProductDetails = () => {
           <span onClick={() => incrementCount(data.id)}><i class="fa-solid fa-plus product-icon"></i></span>
         </div>
 
-        <Link to={`/ecommerce/cart`}>
+        <Link to={`/e-commerce/cart`}>
         <button type='button' className='cart-btn' onClick = {() => addCartItems(data)}>ADD TO CART</button>
         </Link>
         </div>

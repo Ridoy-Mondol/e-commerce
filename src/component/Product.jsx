@@ -223,7 +223,7 @@ const showNormal = () => {
                 FlteredProducts.slice(0,20).map((elem, index) => {
                   return (
                     <div className="product-card">
-                      <Link to = {`/ecommerce/productdetails/${elem.id}`} className="products-link" key={index}>
+                      <Link to = {`/e-commerce/productdetails/${elem.id}`} className="products-link" key={index}>
                     <figure className="position-relative mb-0">
                     <figcaption className="position-absolute fig-caption">{elem.category}</figcaption>
                     <img src = {elem.image} style={{height:"10.5rem"}} className="img-fluid product-page-img" alt='' />

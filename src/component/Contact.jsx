@@ -54,7 +54,7 @@ const Contact = () => {
         }
         return error;
     }
-    
+
     return (
         <div className="contact-div">
             <h1 className="wlc text-black about-heading mt-4 mx-auto text-center">
@@ -67,7 +67,7 @@ const Contact = () => {
               Thank you for your message
             </div>
             }
-            <form method = "POST"className="text-center form" onSubmit={handleSubmit}>
+            <form action="https://formspree.io/f/xkndrzjn" method = "POST"className="text-center form" onSubmit={handleSubmit}>
               <div>
                <input type="text"
                placeholder="NAME" 
