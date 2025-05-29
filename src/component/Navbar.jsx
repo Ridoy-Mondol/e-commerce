@@ -34,10 +34,6 @@ const countArray = [count1,count2,count3,count4,count5,count6,count7,count8,coun
   const count = cartvalue.reduce((acc, val) => {
     return (acc + ((countArray[val.id-1])) || 0);
   }, 0);
-  const LogOut = () => {
-    // localStorage.removeItem('token');
-    localStorage.clear();
-  }
 
     return (
     <>
@@ -83,12 +79,6 @@ const countArray = [count1,count2,count3,count4,count5,count6,count7,count8,coun
         </div>
         </li>
         </Link>
-        
-        <li className="nav-item">
-              <NavLink to="/e-commerce/login" onClick={LogOut}>
-              <button className="logout-btn">Log Out</button>
-              </NavLink>
-        </li>
 
       </ul>
     </div>
