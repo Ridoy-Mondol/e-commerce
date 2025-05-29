@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className="d-flex justify-content-around pt-3 footer-end">
           <p className="rights">&copy; {new Date().getFullYear()} All Rights Reserved By Md. Ahatashamul Islam Mondol </p>
-          <p className="privacy-policy">PRIVACY POLICY <br/> CREATE BY RIDOY MONDOL</p>
+          <p className="privacy-policy">PRIVACY POLICY <br/> CREATE BY AHATASHAMUL ISLAM</p>
         </div>
         </div>
         </div>
