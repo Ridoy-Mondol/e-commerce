@@ -22,17 +22,43 @@ const Contact = () => {
            }
        })
     }
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const formError = validate(value);
         setError(formError);
         if (Object.keys(formError).length === 0) {
-            setSuccess(true);
-            value.name = "";
-            value.subject = "";
-            value.email = "";
-            value.message = "";
-        }
+            try {
+                const response = await fetch("http://localhost:8000/contact", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(value),
+                });
+    
+                if (response.ok) {
+                    setSuccess(true);
+                    setValue({
+                        name: "",
+                        subject: "",
+                        email: "",
+                        message: "",
+                        });
+                } else {
+                    throw new Error("Failed to submit the form");
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+            }
+  
+    // const response = await fetch(`http://localhost:8000/contact`,{
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json"
+    //     },
+    //     body: JSON.stringify(value),
+    // })
+}
     }
     const validate = () => {
         const error = {};

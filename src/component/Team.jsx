@@ -60,9 +60,9 @@ const Team = () => {
       </div>
       <div className='d-flex flex-wrap justify-content-center gap-3 member-card-div'>
         {
-            Data.map((elem) => {
+            Data.map((elem, ind) => {
                 return (
-                    <div className='member-card d-flex flex-column justify-content-center align-items-center gap-4'>
+                    <div className='member-card d-flex flex-column justify-content-center align-items-center gap-4' key = {ind}>
                         <img src={elem.img} className='img-fluid team-img'/>
                         <div className='text-center'>
                         <h5>{elem.name}</h5>

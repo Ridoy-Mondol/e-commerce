@@ -13,17 +13,19 @@ const Footer = () => {
           <div className="footer-follow">
             <h5>Follow me to get important<br/> updates</h5>
             <input type="email" placeholder="Your E-mail" className="footer-input"/><br/>
+            <Link to= "/e-commerce/contact">
             <button className="btn-1 footer-btn">Message</button>
+            </Link>
           </div>
 
           <div className="footer-follow">
             <h5>Follow Me on Social Media</h5>
             <div className="d-flex gap-2">
-            <Link className="footer-link" to="https://web.facebook.com/profile.php?id=100015131225530"><i class="fa-brands fa-facebook footer-icon"></i></Link>
+            <Link className="footer-link" to="https://web.facebook.com/profile.php?id=100015131225530"><i className="fa-brands fa-facebook footer-icon"></i></Link>
 
-            <Link className="footer-link" to="https://www.linkedin.com/in/md-ridoy-mondol-885555297/"><i class="fa-brands fa-linkedin footer-icon"></i></Link>
+            <Link className="footer-link" to="https://www.linkedin.com/in/md-ridoy-mondol-885555297/"><i className="fa-brands fa-linkedin footer-icon"></i></Link>
 
-            <i class="fa-brands fa-telegram footer-icon"></i>
+            <i className="fa-brands fa-telegram footer-icon"></i>
             </div>
           </div>
 
@@ -34,7 +36,7 @@ const Footer = () => {
         </div>
         </div>
         <div className="d-flex justify-content-around pt-3 footer-end">
-          <p className="rights">&copy; 2023 All Rights Reserved By Ridoy Mondol </p>
+          <p className="rights">&copy; {new Date().getFullYear()} All Rights Reserved By Md. Ahatashamul Islam Mondol </p>
           <p className="privacy-policy">PRIVACY POLICY <br/> CREATE BY RIDOY MONDOL</p>
         </div>
         </div>

@@ -22,7 +22,7 @@ const HomeProducts = () => {
           {
            Products.slice(12,18).map((elem) => {
                 return (
-                    <div className="card mx-4 rounded-0 hover-card">
+                    <div className="card mx-4 rounded-0 hover-card" key={elem.id}>
                     <Link to = {`/e-commerce/productdetails/${elem.id}`} className='products-link'>
                     <figure className="position-relative">
                     <figcaption className="position-absolute fig-caption">{elem.category}</figcaption>
@@ -33,7 +33,7 @@ const HomeProducts = () => {
                     <p className="card-text-2 me-1 price">${elem.price}</p>
                 </div>
             </div>
-        {/* </div> */}
+
         </Link>
         </div>
                 )

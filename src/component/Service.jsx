@@ -8,7 +8,7 @@ const Service = () => {
         <div className="d-flex justify-content-center py-5 card-parent-mobile">
           <div className="card border border-0 card-1">
           <div className="icon">
-          <i class="fa-solid fa-truck"></i>
+          <i className="fa-solid fa-truck"></i>
           </div>
           <p className="card-text">Super Fast and Free Delivery</p>
           </div>
@@ -17,7 +17,7 @@ const Service = () => {
            <div className="card-2 card border-0 d-flex align-items-center
            justify-content-center">
             <div className="icon me-2">
-           <i class="fa-solid fa-shield-halved"></i>
+           <i className="fa-solid fa-shield-halved"></i>
            </div>
            <span className="card-text">Non-contact Shipping</span>
            </div>
@@ -25,7 +25,7 @@ const Service = () => {
            <div className="card-2 card-3 card border-0 d-flex align-items-center
            justify-content-center">
             <div className="icon me-2">
-            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+            <i className="fa-solid fa-circle-dollar-to-slot"></i>
            </div>
            <span className="card-text">Money-back Guaranted</span>
            </div>
@@ -33,7 +33,7 @@ const Service = () => {
 
           <div className="card card-1">
           <div className="icon">
-          <i class="fa-regular fa-credit-card"></i>
+          <i className="fa-regular fa-credit-card"></i>
           </div>
           <p className="card-text">Super Secure Payment System</p>
           </div>
